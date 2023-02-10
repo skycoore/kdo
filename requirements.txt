@@ -1,1 +1,1 @@
-cx_Freeze
+PyInstaller

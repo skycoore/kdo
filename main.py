@@ -1,12 +1,9 @@
 import graphics
+from graphics import console
 
-def main():
-    scr = graphics.screen()
-    
-    scr.gotoxy(5, 5)
-    scr.print("Hello world!")
+console = console()
+graphics.addEventListener(console.write, console.print)
 
-    scr.display()
 
-if __name__ == "__main__":
-    main()
+console.gotoXY((6, 6))
+console.write("Hello world")
