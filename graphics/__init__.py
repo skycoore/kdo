@@ -1,2 +1,2 @@
 from .console import console
-from .event import addEventListener
+from .canvas import *

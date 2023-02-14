@@ -1,9 +1,13 @@
 import graphics
 from graphics import console
 
-console = console()
-graphics.addEventListener(console.write, console.print)
+def main():
+    con = console()
 
+    rectangle = graphics.rectangle([0, 0], [12, 6], "#")
+    con.write([0, 0], rectangle)
 
-console.gotoXY((6, 6))
-console.write("Hello world")
+    con.update()
+
+if __name__ == "__main__":
+    main()
